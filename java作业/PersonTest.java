@@ -10,13 +10,13 @@ public class PersonTest {
 		// TODO Auto-generated method stub
 		
 		input =new Scanner(System.in);
-        System.out.println("ÇëÊäÈëÐÕÃû£º"); 
+        System.out.println("è¯·è¾“å…¥å§“åï¼š"); 
         String Name1 = input.nextLine(); 
         String Name2 = input.nextLine(); 
-        System.out.println("ÇëÊäÈëÐÔ±ð£º");
+        System.out.println("è¯·è¾“å…¥æ€§åˆ«ï¼š");
         String Sex1 = input.next(); 
         String Sex2 = input.next(); 
-        System.out.println("ÇëÊäÈëÄêÁä£º"); 
+        System.out.println("è¯·è¾“å…¥å¹´é¾„ï¼š"); 
         int Age1 = input.nextInt(); 
         int Age2 = input.nextInt(); 
         Person p1=new Person(Name1,Sex1,Age1);
@@ -25,26 +25,26 @@ public class PersonTest {
 		try {
 			if(Sex1.equals("male")||Sex1.equals("female"))
 				if(Sex2.equals("male")||Sex2.equals("female"))
-			  throw new SexException("ÐÔ±ð±ØÐëÎªmale»òfemale");
+			  {  System.out.println("å§“åï¼š"+Name1+"\n"+"æ€§åˆ«ï¼š"+Sex1+"\n"+"å¹´é¾„ :"+Age1); 
+			 System.out.println("å§“åï¼š"+Name2+"\n"+"æ€§åˆ«ï¼š"+Sex2+"\n"+"å¹´é¾„ :"+Age2); }
 		  else
-			  System.out.println("ÐÕÃû£º"+Name1+"\n"+"ÐÔ±ð£º"+Sex1+"\n"+"ÄêÁä :"+Age1); 
-			 System.out.println("ÐÕÃû£º"+Name2+"\n"+"ÐÔ±ð£º"+Sex2+"\n"+"ÄêÁä :"+Age2); 
+		  throw new SexException("æ€§åˆ«å¿…é¡»ä¸ºmaleæˆ–female");
 		  if (Age1>120||Age1<0)
-			  throw new SexException("ÄêÁä±ØÐëÔÚ1~120Ö®¼ä!");
+			   { System.out.println("å§“åï¼š"+Name1+"\n"+"æ€§åˆ«ï¼š"+Sex1+"\n"+"å¹´é¾„ :"+Age1); 
+		  System.out.println("å§“åï¼š"+Name2+"\n"+"æ€§åˆ«ï¼š"+Sex2+"\n"+"å¹´é¾„ :"+Age2); }
 		  else
-			  System.out.println("ÐÕÃû£º"+Name1+"\n"+"ÐÔ±ð£º"+Sex1+"\n"+"ÄêÁä :"+Age1); 
-		  System.out.println("ÐÕÃû£º"+Name2+"\n"+"ÐÔ±ð£º"+Sex2+"\n"+"ÄêÁä :"+Age2); 
+			throw new SexException("å¹´é¾„å¿…é¡»åœ¨1~120ä¹‹é—´!");
 		}
 		
 		catch(SexException e) {
-			System.out.println("´¦ÀíÒì³£µÄcatchÓï¾ä²¶»ñµ½ÁËÒì³£");
-			System.out.println("²¶»ñµÄÒì³£Îª"+e);
+			System.out.println("å¤„ç†å¼‚å¸¸çš„catchè¯­å¥æ•èŽ·åˆ°äº†å¼‚å¸¸");
+			System.out.println("æ•èŽ·çš„å¼‚å¸¸ä¸º"+e);
 			 
 		}
 			
        finally {
-	        System.out.println("ÕâÊÇËùÓÐcatch¿é¹²ÓÐµÄ²¿·Ö");
-			System.out.println("try-catch-finallyºóÃæµÄÓï¾ä");
+	        System.out.println("è¿™æ˜¯æ‰€æœ‰catchå—å…±æœ‰çš„éƒ¨åˆ†");
+			System.out.println("try-catch-finallyåŽé¢çš„è¯­å¥");
 			 }
 	}
 	
