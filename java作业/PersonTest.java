@@ -29,7 +29,8 @@ public class PersonTest {
 			 System.out.println("姓名："+Name2+"\n"+"性别："+Sex2+"\n"+"年龄 :"+Age2); }
 		  else
 		  throw new SexException("性别必须为male或female");
-		  if (Age1>120||Age1<0)
+		  if (Age1<=120||Age1>=0)
+			  if (Age2<=120||Age2>=0)
 			   { System.out.println("姓名："+Name1+"\n"+"性别："+Sex1+"\n"+"年龄 :"+Age1); 
 		  System.out.println("姓名："+Name2+"\n"+"性别："+Sex2+"\n"+"年龄 :"+Age2); }
 		  else
