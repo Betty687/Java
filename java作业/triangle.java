@@ -14,7 +14,7 @@ public class triangle {
 	    p=(a+b+c)/2;
 		C=a+b+c;
 		
-        try { if(a+b<c||a+c<b||b+c<a) 
+        try { if(a+b<=c||a+c<=b||b+c<=a) 
         throw  myException();
 			
 		else
