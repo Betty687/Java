@@ -5,7 +5,7 @@ public class triangle {
 	public static void main(String[] args)throws Exception {
 		// TODO Auto-generated method stub
 		input =new Scanner(System.in);
-		System.out.println("ÇëÊäÈëÈı±ß¸÷³¤£º"); 
+		System.out.println("è¯·è¾“å…¥ä¸‰è¾¹å„é•¿ï¼š"); 
 	    double a =input.nextDouble(); 
 	    double b =input.nextDouble(); 
 	    double c= input.nextDouble();
@@ -14,21 +14,21 @@ public class triangle {
 	    p=(a+b+c)/2;
 		C=a+b+c;
 		
-        try { if(a+b<c&&a+c<b&&b+c<a) 
+        try { if(a+b<c||a+c<b||b+c<a) 
         throw  myException();
 			
 		else
-				System.out.println("¸ÃÈı½ÇĞÎÖÜ³¤Îª"+C);
-        System.out.println("¸ÃÈı½ÇĞÎÃæ»ıÎª"+Math.sqrt(p*(p-a)*(p-b)*(p-c)));
+				System.out.println("è¯¥ä¸‰è§’å½¢å‘¨é•¿ä¸º"+C);
+        System.out.println("è¯¥ä¸‰è§’å½¢é¢ç§¯ä¸º"+Math.sqrt(p*(p-a)*(p-b)*(p-c)));
         }
        catch(myException e) {
-    	   System.out.println("´¦ÀíÈı½ÇĞÎÒì³£µÄcatchÓï¾ä²¶»ñµ½ÁËÒì³£");
-			System.out.println("²¶»ñµÄÒì³£Îª"+e);
+    	   System.out.println("å¤„ç†ä¸‰è§’å½¢å¼‚å¸¸çš„catchè¯­å¥æ•è·åˆ°äº†å¼‚å¸¸");
+			System.out.println("æ•è·çš„å¼‚å¸¸ä¸º"+e);
 			e.printStackTrace();
        }
         finally {
-	        System.out.println("ÕâÊÇËùÓĞcatch¿é¹²ÓĞµÄ²¿·Ö");
-			System.out.println("try-catch-finallyºóÃæµÄÓï¾ä");
+	        System.out.println("è¿™æ˜¯æ‰€æœ‰catchå—å…±æœ‰çš„éƒ¨åˆ†");
+			System.out.println("try-catch-finallyåé¢çš„è¯­å¥");
 			 }
        }
 	
