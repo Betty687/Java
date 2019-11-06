@@ -8,7 +8,7 @@ public class Threadtest {
 			right = new Righthand();
 			left.setPriority(Thread.MAX_PRIORITY);
 			left.start();
-			try {Thread.sleep(300);
+			try {Thread.sleep(100);
 }
 			catch(Exception e) {}
 			right.start();
@@ -21,7 +21,7 @@ class Lefthand extends Thread
 		for(int i=0;i<=5;i++)
 		{	System.out.println("You are Students!");
 			try
-			{	sleep(300);
+			{	sleep(100);
 			}catch(Exception e){}
 		}
 	
@@ -32,7 +32,7 @@ class Righthand extends Thread
 	{	for(int i=0;i<=5;i++)
 		{	System.out.println("I am a Teacher!");
 			try
-			{	sleep(300);
+			{	sleep(100);
 			}
 			catch(Exception e){}
 		}
